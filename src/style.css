@@ -64,7 +64,7 @@ header{
 
 .question{
     font-size: 30px;
-    color: #37E1E3;
+    color: rgba(55, 225, 227, 0.70);
     font-family: 'Abhaya Libre', serif;
     text-align: center;
 }
@@ -72,7 +72,6 @@ header{
 .inicio-box{
     background: rgba(196, 196, 196, 0.3);
     mix-blend-mode: lighten;
-    border: 5px solid #AE8537;
     width: auto;
     width: 90%;
     padding: 0.3em;
@@ -85,7 +84,7 @@ header{
     font-weight: normal;
     font-size: 20px;
     line-height: 26px;
-    color: #1E302C; 
+    color: #FFFFFF;
     text-align: center;
 
 }
@@ -142,8 +141,8 @@ header{
 }
 
 .imgRedonda {
-    width:80px;
-    height:80px;
+    width:70px;
+    height:70px;
     border-radius:150px;
     margin-top: 1em;
 

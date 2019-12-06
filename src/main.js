@@ -61,4 +61,3 @@ function setFilter(e) {
 
 homeButton.addEventListener('click', setView);
 championsButton.addEventListener('click', setView);
-
