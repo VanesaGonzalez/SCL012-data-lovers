@@ -5,64 +5,50 @@
 }
 
 body{
+    display:flex;
+    flex-direction: column;
     background-image: url(../Images/backgroundLoL.png);
-    background-position: center;
-    background-size: cover;
+    justify-content: center;
+    background-size: 100% 100%;
     background-attachment: fixed;
     font-family: 'Abhaya Libre', serif;
-
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-
-}
 header{
-    height: 180px;
-    top: 20px;
-    background: transparent url(../Images/headerLol.png) no-repeat 50% 0;
-    background-size: contain;
-}
-
-.row{
     display: flex;
     justify-content: center;
-
+    width: 90%;
+    height:150px;
+    margin: auto;
+    background-image: url(../Images/headerLol.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
-#champions .row{
-    flex-wrap: wrap;
+nav{
+    margin:auto;
+    width: 100%;
 }
 
-#main-navigation{
-    position: relative;
-    top: 96px;
-    padding: 0 15em 0 15em;
-
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding-top: 36px;
 }
-
-/* #image-header{
-    width: auto;
-
-} */
-
-.main-button{
-    font-size: 20px;
-    width: 150px;
-    background: none;
-    border: 0;
-    color: #37E1E3;
+nav li a{
     font-family: 'Abhaya Libre', serif;
+    font-size: 20px;
+    text-decoration: none;
+    color:#37E1E3;
 }
-
-.space{
-    width: 500px;
+/*------------------------Página de Inicio---------------------*/
+section#home{
+    display: flex;
+    flex-direction: column;
 }
-
 .question{
+    margin:auto;
     font-size: 30px;
     color: rgba(55, 225, 227, 0.70);
     font-family: 'Abhaya Libre', serif;
@@ -70,9 +56,14 @@ header{
 }
 
 .inicio-box{
+    margin:auto;
     background: rgba(196, 196, 196, 0.3);
     mix-blend-mode: lighten;
+<<<<<<< HEAD
     width: auto;
+=======
+    border: 5px solid #AE8537;
+>>>>>>> 614ad4d7f1dde41c4c5bfdceaf146ee809238373
     width: 90%;
     padding: 0.3em;
 
@@ -89,11 +80,18 @@ header{
 
 }
 
-.margin-top{
-    margin-top: 25px;
+/*--------------------------Nav------------------------*/
+
+section#champions{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 73%;
+    display: none;
 }
 
 .classSelect{
+    display: flex;
     width: 180px;
     height: 47px;
     background: #080808;
@@ -106,10 +104,11 @@ header{
     font-size: 20px;
     line-height: 35px;
     color: #AE8537;
-
+    outline: none;
 }
 
 .positionButton{
+    display: flex;
     width: 125px;
     height: 26px;
     background: #080808;
@@ -122,13 +121,10 @@ header{
     font-size: 15px;
     color: #AE8537;
     margin: 0.5em;
-
+    outline: none;
 }
 
-#champions{
-    width: 73%;
-    display: none;
-}
+/*--------------------------Vista de Campeones-----------------------*/
 
 .championBox{
     width: 210px;
