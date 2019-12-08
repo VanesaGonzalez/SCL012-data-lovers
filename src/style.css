@@ -24,7 +24,12 @@ header{
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
 nav{
     margin:auto;
     width: 100%;
@@ -50,7 +55,7 @@ section#home{
 .question{
     margin:auto;
     font-size: 30px;
-    color: #37E1E3;
+    color: rgba(55, 225, 227, 0.70);
     font-family: 'Abhaya Libre', serif;
     text-align: center;
 }
@@ -58,11 +63,8 @@ section#home{
 .inicio-box{
     margin:auto;
     background: rgba(196, 196, 196, 0.3);
-    mix-blend-mode: lighten;
-    border: 5px solid #AE8537;
     width: 90%;
     padding: 0.3em;
-
 }
 
 .inicio-box p{
@@ -71,9 +73,8 @@ section#home{
     font-weight: normal;
     font-size: 20px;
     line-height: 26px;
-    color: #1E302C; 
+    color: rgba(255, 255, 255, 0.75); 
     text-align: center;
-
 }
 
 /*--------------------------Nav------------------------*/
@@ -121,7 +122,24 @@ section#champions{
 }
 
 /*--------------------------Vista de Campeones-----------------------*/
+#champions{
+    width: 73%;
+    display: none;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.row{
+    display: flex;
+    justify-content: center;
 
+}
+#champions .row{
+    flex-wrap: wrap;
+}
 .championBox{
     width: 210px;
     height: 210px;
