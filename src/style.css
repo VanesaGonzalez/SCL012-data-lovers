@@ -24,7 +24,12 @@ header{
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
 nav{
     margin:auto;
     width: 100%;
@@ -59,14 +64,9 @@ section#home{
     margin:auto;
     background: rgba(196, 196, 196, 0.3);
     mix-blend-mode: lighten;
-<<<<<<< HEAD
     width: auto;
-=======
-    border: 5px solid #AE8537;
->>>>>>> 614ad4d7f1dde41c4c5bfdceaf146ee809238373
     width: 90%;
     padding: 0.3em;
-
 }
 
 .inicio-box p{
@@ -75,9 +75,8 @@ section#home{
     font-weight: normal;
     font-size: 20px;
     line-height: 26px;
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 0.75); 
     text-align: center;
-
 }
 
 /*--------------------------Nav------------------------*/
@@ -125,7 +124,24 @@ section#champions{
 }
 
 /*--------------------------Vista de Campeones-----------------------*/
+#champions{
+    width: 73%;
+    display: none;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.row{
+    display: flex;
+    justify-content: center;
 
+}
+#champions .row{
+    flex-wrap: wrap;
+}
 .championBox{
     width: 210px;
     height: 210px;
