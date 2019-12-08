@@ -21,6 +21,7 @@ export default {
         magic: 3,
         difficulty: 4,
       },
+      line:'top',
       image: {
         full: 'Aatrox.png',
         sprite: 'champion0.png',

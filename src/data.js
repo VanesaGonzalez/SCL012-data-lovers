@@ -11,3 +11,12 @@ export const showChampion = (filter) => {
   return champions;
 }
 
+export const lineChampions = (filter) => {
+  const lines = []
+  Object.keys(LoL.data).forEach( (item) => {
+    if(LoL.data[item].line === filter || filter === ''){
+      lines.push(LoL.data[item]);
+    }
+  });
+  return lines;
+}
