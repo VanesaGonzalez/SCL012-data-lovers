@@ -16,19 +16,45 @@
         </ul>
       </nav>
     </header>
-    <div id="champions" class="center row"></div>
+    
+    <div id="filters">
+      <div class='row'>
+        <select id='selectClases' class='classSelect'>
+          <option value=''>Todas las clases</option>
+          <option value='Assassin'>Asesino</option>
+          <option value='Fighter'>Luchador</option>
+          <option value='Mage'>Mago</option>
+          <option value='Support'>Soporte</option>
+          <option value='Tank'>Tanque</option>
+        </select>
+        <button id='top' class='positionButton'>Superior</button>
+        <button id='jungla' class='positionButton'>Jungla</button>
+        <button class='positionButton'>Medio</button>
+        <button class='positionButton'>Inferior</button>
+        <button class='positionButton'>Soporte</button>
+      </div>
+    </div>
+
+    <div id="champions" class="center row">
+    </div>
     <section id="home">
     
-        <div class="question">¿Qué es League of Legends?</div> 
-        <div class="inicio-box"><p>También conocido como LoL, es un juego en línea competitivo y de rol, 
-        que fusiona la velocidad y la intensidad de la estrategia en tiempo real. Dos equipos de poderosos campeones, 
-        compiten cara a cara a través de diversos campos de batalla y modos de juego. 
-        </p></div>
-        
-        <div class="question">¿Qué encontrarás aquí?</div> 
-        <div class="inicio-box"><p>Una base de datos de campeones en una liga del juego.</p></div>  
-  
-      </section>
+      <div class="question">¿Qué es League of Legends?</div> 
+      <div class="inicio-box"><p>También conocido como LoL, es un juego en línea competitivo y de rol, 
+      que fusiona la velocidad y la intensidad de la estrategia en tiempo real. Dos equipos de poderosos campeones, 
+      compiten cara a cara a través de diversos campos de batalla y modos de juego. 
+      </p></div>
+      
+      <div class="question">¿Qué encontrarás aquí?</div> 
+      <div class="inicio-box"><p>Una base de datos de campeones en una liga del juego.</p></div>  
+
+    </section>
+    
+    <div class="modal">
+      <div class="modal-content">
+          <!-- Modal content -->
+      </div>
+    </div>
   
     <script type="module" src="main.js"></script>
   </body>
