@@ -19,11 +19,11 @@ function makeChampions(data) {
                       <option value ='Support'>Soporte</option>
                       <option value ='Tank'>Tanque</option>
                     </select>
-                    <button id='top' class='positionButton'>Superior</button>
-                    <button id='jungla' class='positionButton'>Jungla</button>
-                    <button class='positionButton'>Medio</button>
-                    <button class='positionButton'>Inferior</button>
-                    <button class='positionButton'>Soporte</button></div>`
+                    <button id='Top' class='positionButton'>Superior</button>
+                    <button id='Jungle' class='positionButton'>Jungla</button>
+                    <button id="Mid" class='positionButton'>Medio</button>
+                    <button id="Bot" class='positionButton'>Inferior</button>
+                    <button id="Support" class='positionButton'>Soporte</button></div>`
   innerHTML += '<div id="championsWraper" class="row">'
   data.map(data => {
     innerHTML += '<div class = "championBox margin-top">';
@@ -38,12 +38,17 @@ function makeChampions(data) {
 
 function makeButtons () {
   const selectClases = document.getElementById('selectClases');
-  const topLine = document.getElementById('top');
-  const jgLine = document.getElementById('jungla');
+  const topLine = document.getElementById('Top');
+  const jgLine = document.getElementById('Jungle');
+  const midLine = document.getElementById('Mid');
+  const botLine = document.getElementById('Bot');
+  const supportLine = document.getElementById('Support');
   selectClases.addEventListener('change', setFilter);
   topLine.addEventListener('click', setFilterLine);
   jgLine.addEventListener('click', setFilterLine);
-
+  midLine.addEventListener('click', setFilterLine);
+  botLine.addEventListener('click', setFilterLine);
+  supportLine.addEventListener('click', setFilterLine);
 }
 
 function setView(e) {
