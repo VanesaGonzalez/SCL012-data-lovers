@@ -1,7 +1,7 @@
 export default {
   type: 'champion',
   format: 'standAloneComplex',
-  1version: '6.24.1',
+  version: '6.24.1',
   data: {
     Aatrox: {
       version: '6.24.1',
