@@ -56,7 +56,7 @@ A partir de la encuesta, pudimos dedicarnos a realizar los bocetos a mano alzada
 
 ## 3. Testeo de usabilidad
 
-Solo pudimos realizar tres testeos de usabilidad. A continuación adjuntamos los videos y apreciaciones finales:
+Solo pudimos realizar tres testeos de usabilidad. A continuación adjuntamos videos y apreciaciones finales:
 
 
 ### DOM
