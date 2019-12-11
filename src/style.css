@@ -78,6 +78,9 @@ section#home{
 }
 
 /*--------------------------Nav------------------------*/
+#filters {
+    display: none;
+}
 
 section#champions{
     display: flex;
@@ -137,9 +140,33 @@ section#champions{
     justify-content: center;
 
 }
-#champions .row{
+#champions .row, #statsDiv .row{
     flex-wrap: wrap;
 }
+
+#statsDiv {
+    float: left;
+}
+
+.stat {
+    width: 50%;
+    justify-content: normal;
+}
+
+.stat img {
+    width: 41px;
+    height: 34px;
+    padding: 1em;
+}
+
+.stat p {
+    font-size: 24px;
+}
+
+.lastStat {
+    width: 100%;
+}
+
 .championBox{
     width: 210px;
     height: 210px;
@@ -148,6 +175,7 @@ section#champions{
     box-sizing: border-box;
     margin: 0.2em;
     margin-top: 25px;
+    outline:none;
 }
 
 .imgRedonda {
@@ -161,6 +189,9 @@ section#champions{
 .imageButton{
     background: transparent;
     border: 0;
+}
+.imageButton:hover {
+    cursor: pointer;
 }
 
 .name-title{
@@ -207,10 +238,6 @@ section#champions{
     width: 230px;
     height: 240px;
     float: left;
-  }
-
-  .modalIcons {
- 
   }
 
   .modalTitle {

@@ -26,20 +26,7 @@ function makeChampions(data) {
   return innerHTML;
 }
 
-function makeButtons() { // captura los botones y agrega evento
-  const selectClases = document.getElementById('selectClases');
-  const topLine = document.getElementById('Top');
-  const jgLine = document.getElementById('Jungle');
-  const midLine = document.getElementById('Mid');
-  const botLine = document.getElementById('Bot');
-  const supportLine = document.getElementById('Support');
-  selectClases.addEventListener('change', setFilter);
-  topLine.addEventListener('click', setFilterLine);
-  jgLine.addEventListener('click', setFilterLine);
-  midLine.addEventListener('click', setFilterLine);
-  botLine.addEventListener('click', setFilterLine);
-  supportLine.addEventListener('click', setFilterLine);
-}
+
 
 function setView(e) { // cambia entre inicio y campeones
   e.preventDefault();
@@ -96,6 +83,21 @@ function setFilterLine(e) {
   });
 
   makeButtons();
+}
+
+function makeButtons() { // captura los botones y agrega evento
+  const selectClases = document.getElementById('selectClases');
+  const topLine = document.getElementById('Top');
+  const jgLine = document.getElementById('Jungle');
+  const midLine = document.getElementById('Mid');
+  const botLine = document.getElementById('Bot');
+  const supportLine = document.getElementById('Support');
+  selectClases.addEventListener('change', setFilter);
+  topLine.addEventListener('click', setFilterLine);
+  jgLine.addEventListener('click', setFilterLine);
+  midLine.addEventListener('click', setFilterLine);
+  botLine.addEventListener('click', setFilterLine);
+  supportLine.addEventListener('click', setFilterLine);
 }
 
 function openModal(e) {
