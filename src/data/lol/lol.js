@@ -136,7 +136,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Mid','Top'],
+      lines: ['Mid', 'Top'],
       tags: ['Assassin'],
       partype: 'Energy',
       stats: {
@@ -666,7 +666,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Mid','Support'],
+      lines: ['Mid', 'Support'],
       tags: ['Mage'],
       partype: 'MP',
       stats: {
@@ -878,7 +878,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Top','Mid'],
+      lines: ['Top', 'Mid'],
       tags: ['Mage'],
       partype: 'MP',
       stats: {
@@ -1196,7 +1196,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Top','Jungle'],
+      lines: ['Top', 'Jungle'],
       tags: ['Fighter', 'Tank'],
       partype: 'None',
       stats: {
@@ -1249,7 +1249,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Jungle','Mid'],
+      lines: ['Jungle', 'Mid'],
       tags: ['Assassin', 'Fighter'],
       partype: 'MP',
       stats: {
@@ -1990,7 +1990,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Top','Mid'],
+      lines: ['Top', 'Mid'],
       tags: ['Mage', 'Support'],
       partype: 'MP',
       stats: {
@@ -2096,7 +2096,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Top','Mid'],
+      lines: ['Top', 'Mid'],
       tags: ['Fighter', 'Assassin'],
       partype: 'MP',
       stats: {
@@ -2308,7 +2308,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Top','Jungle'],
+      lines: ['Top', 'Jungle'],
       tags: ['Fighter', 'Assassin'],
       partype: 'MP',
       stats: {
@@ -2785,7 +2785,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Top','Mid'],
+      lines: ['Top', 'Mid'],
       tags: ['Fighter', 'Support'],
       partype: 'MP',
       stats: {
@@ -3315,7 +3315,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Top','Mid'],
+      lines: ['Top', 'Mid'],
       tags: ['Marksman'],
       partype: 'MP',
       stats: {
@@ -3421,7 +3421,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Mid','Support'],
+      lines: ['Mid', 'Support'],
       tags: ['Mage', 'Support'],
       partype: 'MP',
       stats: {
@@ -3474,7 +3474,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Top','Jungle'],
+      lines: ['Top', 'Jungle'],
       tags: ['Tank', 'Fighter'],
       partype: 'MP',
       stats: {
@@ -3792,7 +3792,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Top','Mid'],
+      lines: ['Top', 'Mid'],
       tags: ['Fighter'],
       partype: 'None',
       stats: {
@@ -3845,7 +3845,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Mid','Support'],
+      lines: ['Mid', 'Support'],
       tags: ['Mage', 'Support'],
       partype: 'MP',
       stats: {
@@ -4110,7 +4110,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Top','Jungle'],
+      lines: ['Top', 'Jungle'],
       tags: ['Assassin', 'Fighter'],
       partype: 'MP',
       stats: {
@@ -4216,7 +4216,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Top' , 'Jungle'],
+      lines: ['Top', 'Jungle'],
       tags: ['Fighter', 'Tank'],
       partype: 'MP',
       stats: {
@@ -4799,7 +4799,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Top','Mid'],
+      lines: ['Top', 'Mid'],
       tags: ['Mage', 'Fighter'],
       partype: 'MP',
       stats: {
@@ -4905,7 +4905,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Jungle','Support'],
+      lines: ['Jungle', 'Support'],
       tags: ['Assassin'],
       partype: 'MP',
       stats: {
@@ -5382,7 +5382,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Mid','Support'],
+      lines: ['Mid', 'Support'],
       tags: ['Mage', 'Fighter'],
       partype: 'MP',
       stats: {
@@ -5806,7 +5806,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Mid','Bot'],
+      lines: ['Mid', 'Bot'],
       tags: ['Marksman', 'Assassin'],
       partype: 'MP',
       stats: {
@@ -6018,7 +6018,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Jungle','Bot'],
+      lines: ['Jungle', 'Bot'],
       tags: ['Marksman', 'Assassin'],
       partype: 'MP',
       stats: {
@@ -6230,7 +6230,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Top','Bot'],
+      lines: ['Top', 'Bot'],
       tags: ['Marksman', 'Assassin'],
       partype: 'MP',
       stats: {
@@ -6283,7 +6283,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Mid','Support'],
+      lines: ['Mid', 'Support'],
       tags: ['Mage'],
       partype: 'MP',
       stats: {
@@ -6336,7 +6336,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Mid','Support'],
+      lines: ['Mid', 'Support'],
       tags: ['Mage'],
       partype: 'MP',
       stats: {
@@ -6494,7 +6494,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Top','Mid'],
+      lines: ['Top', 'Mid'],
       tags: ['Mage', 'Tank'],
       partype: 'Gnarfury',
       stats: {
@@ -6653,7 +6653,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Mid','Support'],
+      lines: ['Mid', 'Support'],
       tags: ['Mage', 'Assassin'],
       partype: 'MP',
       stats: {
@@ -6759,7 +6759,7 @@ export default {
         w: 48,
         h: 48,
       },
-      lines: ['Top','Mid'],
+      lines: ['Top', 'Mid'],
       tags: ['Fighter', 'Assassin'],
       partype: 'Wind',
       stats: {

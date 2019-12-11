@@ -26,36 +26,6 @@ function makeChampions(data) {
   return innerHTML;
 }
 
-function setFilter(e) { // filtro en select o clases
-  const filter = e.target.value;
-  championsData = showChampion(filter); // filtra la información
-  document.getElementById('championsWraper').remove(); // borra todas las cajas
-  champions.innerHTML = makeChampions(championsData); // "dibuja" cajas con información filtrada
-
-  const imagesButtons = document.querySelectorAll('.imageButton');
-
-  imagesButtons.forEach((elem) => {
-    elem.addEventListener('click', openModal);
-  });
-
-  makeButtons();
-}
-
-function setFilterLine(e) {
-  const filter = e.target.id;
-  lineData = lineChampions(filter);
-  document.getElementById('championsWraper').remove();
-  champions.innerHTML = makeChampions(lineData);
-
-  const imagesButtons = document.querySelectorAll('.imageButton');
-
-  imagesButtons.forEach((elem) => {
-    elem.addEventListener('click', openModal);
-  });
-
-  makeButtons();
-}
-
 function makeButtons() { // captura los botones y agrega evento
   const selectClases = document.getElementById('selectClases');
   const topLine = document.getElementById('Top');
@@ -98,6 +68,36 @@ function setView(e) { // cambia entre inicio y campeones
   }
 }
 
+function setFilter(e) { // filtro en select o clases
+  const filter = e.target.value;
+  championsData = showChampion(filter); // filtra la información
+  document.getElementById('championsWraper').remove(); // borra todas las cajas
+  champions.innerHTML = makeChampions(championsData); // "dibuja" cajas con información filtrada
+
+  const imagesButtons = document.querySelectorAll('.imageButton');
+
+  imagesButtons.forEach((elem) => {
+    elem.addEventListener('click', openModal);
+  });
+
+  makeButtons();
+}
+
+function setFilterLine(e) {
+  const filter = e.target.id;
+  lineData = lineChampions(filter);
+  document.getElementById('championsWraper').remove();
+  champions.innerHTML = makeChampions(lineData);
+
+  const imagesButtons = document.querySelectorAll('.imageButton');
+
+  imagesButtons.forEach((elem) => {
+    elem.addEventListener('click', openModal);
+  });
+
+  makeButtons();
+}
+
 function openModal(e) {
   const result = findById(e.target.id); // devuelve solo un campeón
 
@@ -123,8 +123,8 @@ function openModal(e) {
   content += `<div class="row stat"><img src="../Images/Icons/armadura.png"/><p id="stats"> Move Speed: ${result.stats.movespeed}</p></div>`;
   content += `<div class="row stat"><img src="../Images/Icons/velocidaddeataque.png"/><p id="stats"> Life Regen: ${result.stats.hpregen}</p></div>`;
   content += `<div class="row stat"><img src="../Images/Icons/resistenciamagica.png"/><p id="stats"> Armor: ${result.stats.armor}</p></div>`;
-  content += `<div class="row stat lastStat"><img src="../Images/Icons/velocidaddemovimiento.png"/><p id="stats"> Spell Block: ${result.stats.spellblock}</p></div>`;
-  content += `</div></div>`;
+  content += `<div class="row stat lastStat"><img src="../Images/Icons/velocidaddemovimiento.png"/><p id="stats"> Spell Block: ${result.stats.spellblock} + '</p></div>`;
+  content += '</div></div>';
 
 
   modal.firstElementChild.innerHTML = content;
