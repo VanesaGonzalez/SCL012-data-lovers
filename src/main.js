@@ -1,4 +1,3 @@
-
 import { showChampion, lineChampions, findById } from './data.js';
 
 let championsData = showChampion('');

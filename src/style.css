@@ -111,6 +111,25 @@ section#champions{
     text-align: center;
 }
 
+.classSelect{
+    display: flex;
+    width: 180px;
+    height: 47px;
+    background: #080808;
+    border: 2px solid #AE8537;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: Abhaya Libre;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 35px;
+    color: #AE8537;
+    outline: none;
+}
+
+
+
 .positionButton{
     display: flex;
     width: 125px;
