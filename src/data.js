@@ -19,3 +19,13 @@ export const lineChampions = (filter) => {
   });
   return lines;
 };
+
+export const findById = (id) => {
+  let champion = {};
+  Object.keys(LoL.data).forEach((item) => {
+    if (LoL.data[item].key === id) {
+      champion = LoL.data[item];
+    }
+  });
+  return champion;
+};
