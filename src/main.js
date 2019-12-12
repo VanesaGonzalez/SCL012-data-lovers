@@ -45,12 +45,12 @@ function openModal(e) {
   content += `<p id="blurb">${result.blurb}</p>`;
   content += '<br>';
   content += '<div id="statsDiv"><div class="row">';
-  content += `<div class="row stat"><img src="../Images/Icons/vida.png"/><p id="stats"> Life: ${result.stats.hp}</p></div>`;
-  content += `<div class="row stat"><img src="../Images/Icons/regeneraciondevida.png"/><p id="stats"> Attack Range: ${result.stats.attackrange}</p></div>`;
-  content += `<div class="row stat"><img src="../Images/Icons/dañodeataque.png"/><p id="stats"> Attack Speed Offset: ${result.stats.attackspeedoffset}</p></div>`;
-  content += `<div class="row stat"><img src="../Images/Icons/armadura.png"/><p id="stats"> Move Speed: ${result.stats.movespeed}</p></div>`;
-  content += `<div class="row stat"><img src="../Images/Icons/velocidaddeataque.png"/><p id="stats"> Life Regen: ${result.stats.hpregen}</p></div>`;
-  content += `<div class="row stat"><img src="../Images/Icons/resistenciamagica.png"/><p id="stats"> Armor: ${result.stats.armor}</p></div>`;
+  content += `<div class="row stat"><img src="./Images/Icons/vida.png"/><p id="stats"> Life: ${result.stats.hp}</p></div>`;
+  content += `<div class="row stat"><img src="./Images/Icons/regeneraciondevida.png"/><p id="stats"> Attack Range: ${result.stats.attackrange}</p></div>`;
+  content += `<div class="row stat"><img src="./Images/Icons/dañodeataque.png"/><p id="stats"> Attack Speed Offset: ${result.stats.attackspeedoffset}</p></div>`;
+  content += `<div class="row stat"><img src="./Images/Icons/armadura.png"/><p id="stats"> Move Speed: ${result.stats.movespeed}</p></div>`;
+  content += `<div class="row stat"><img src="./Images/Icons/velocidaddeataque.png"/><p id="stats"> Life Regen: ${result.stats.hpregen}</p></div>`;
+  content += `<div class="row stat"><img src="./Images/Icons/resistenciamagica.png"/><p id="stats"> Armor: ${result.stats.armor}</p></div>`;
   content += `<div class="row stat lastStat"><img src="../Images/Icons/velocidaddemovimiento.png"/><p id="stats"> Spell Block: ${result.stats.spellblock} + '</p></div>`;
   content += '</div></div>';
 
@@ -98,6 +98,11 @@ function setFilter(e) { // filtro en select o clases
   document.getElementById('championsWraper').remove(); // borra todas las cajas
   champions.innerHTML = makeChampions(championsData); // "dibuja" cajas con información filtrada
 
+  const allButtons = document.querySelectorAll('.positionButton'); // devuelve el color original a los botones
+  for (let i = 0; i < allButtons.length; i += 1) {
+    allButtons[i].setAttribute('style', 'background: #080808;');
+  }
+
   const imagesButtons = document.querySelectorAll('.imageButton');
 
   imagesButtons.forEach((elem) => {
@@ -109,9 +114,16 @@ function setFilter(e) { // filtro en select o clases
 
 function setFilterLine(e) {
   const filter = e.target.id;
+  const allButtons = document.querySelectorAll('.positionButton');
+  for (let i = 0; i < allButtons.length; i += 1) {
+    allButtons[i].setAttribute('style', 'background: #080808;');
+  }
+  e.target.style.background = 'rgba(8, 8, 8, 0.5)';
   lineData = lineChampions(filter);
   document.getElementById('championsWraper').remove();
   champions.innerHTML = makeChampions(lineData);
+  const selectClases = document.getElementById('selectClases');
+  selectClases.value = '';
 
   const imagesButtons = document.querySelectorAll('.imageButton');
 
