@@ -51,7 +51,7 @@ function openModal(e) {
   content += `<div class="row stat"><img src="Images/Icons/armadura.png"/><p id="stats"> Move Speed: ${result.stats.movespeed}</p></div>`;
   content += `<div class="row stat"><img src="Images/Icons/velocidaddeataque.png"/><p id="stats"> Life Regen: ${result.stats.hpregen}</p></div>`;
   content += `<div class="row stat"><img src="Images/Icons/resistenciamagica.png"/><p id="stats"> Armor: ${result.stats.armor}</p></div>`;
-  content += `<div class="row stat lastStat"><img src="../Images/Icons/velocidaddemovimiento.png"/><p id="stats"> Spell Block: ${result.stats.spellblock} + '</p></div>`;
+  content += `<div class="row stat lastStat"><img src="Images/Icons/velocidaddemovimiento.png"/><p id="stats"> Spell Block: ${result.stats.spellblock} + '</p></div>`;
   content += '</div></div>';
 
 
