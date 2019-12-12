@@ -47,7 +47,7 @@ function openModal(e) {
   content += '<div id="statsDiv"><div class="row">';
   content += `<div class="row stat"><img src="../Images/Icons/vida.png"/><p id="stats"> Life: ${result.stats.hp}</p></div>`;
   content += `<div class="row stat"><img src="../Images/Icons/regeneraciondevida.png"/><p id="stats"> Attack Range: ${result.stats.attackrange}</p></div>`;
-  content += `<div class="row stat"><img src="../Images/Icons/dañodeataque.png"/><p id="stats"> Attack Speed Offset: ${result.stats.attackspeedoffset}</p></div>`;
+  content += `<div class="row stat"><img src="../Images/Icons/dañodeataque.png"/><p id="stats"> Attack Speed Offset: ${result.stats.attackspeedoffset}</p></div>`;
   content += `<div class="row stat"><img src="../Images/Icons/armadura.png"/><p id="stats"> Move Speed: ${result.stats.movespeed}</p></div>`;
   content += `<div class="row stat"><img src="../Images/Icons/velocidaddeataque.png"/><p id="stats"> Life Regen: ${result.stats.hpregen}</p></div>`;
   content += `<div class="row stat"><img src="../Images/Icons/resistenciamagica.png"/><p id="stats"> Armor: ${result.stats.armor}</p></div>`;
