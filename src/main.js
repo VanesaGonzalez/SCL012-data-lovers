@@ -25,78 +25,6 @@ function makeChampions(data) {
   return innerHTML;
 }
 
-function makeButtons() { // captura los botones y agrega evento
-  const selectClases = document.getElementById('selectClases');
-  const topLine = document.getElementById('Top');
-  const jgLine = document.getElementById('Jungle');
-  const midLine = document.getElementById('Mid');
-  const botLine = document.getElementById('Bot');
-  const supportLine = document.getElementById('Support');
-  selectClases.addEventListener('change', setFilter);
-  topLine.addEventListener('click', setFilterLine);
-  jgLine.addEventListener('click', setFilterLine);
-  midLine.addEventListener('click', setFilterLine);
-  botLine.addEventListener('click', setFilterLine);
-  supportLine.addEventListener('click', setFilterLine);
-}
-
-function setView(e) { // cambia entre inicio y campeones
-  e.preventDefault();
-  if (e.target.id === 'championsButton') {
-    home.style.display = 'none';
-    filters.style.display = 'block';
-    champions.style.display = 'block';
-    championsButton.style.color = 'rgba(55, 225, 227, 0.5)';
-    homeButton.style.color = '';
-
-    champions.innerHTML = makeChampions(championsData); // hace cada caja de campeones
-
-    const imagesButtons = document.querySelectorAll('.imageButton'); // botón de la caja, capturo y agrego evento
-
-    imagesButtons.forEach((elem) => {
-      elem.addEventListener('click', openModal);
-    });
-
-    makeButtons();
-  } else {
-    home.style.display = 'inherit';
-    champions.style.display = 'none';
-    filters.style.display = 'none';
-    homeButton.style.color = 'rgba(55, 225, 227, 0.5)';
-    championsButton.style.color = '';
-  }
-}
-
-function setFilter(e) { // filtro en select o clases
-  const filter = e.target.value;
-  championsData = showChampion(filter); // filtra la información
-  document.getElementById('championsWraper').remove(); // borra todas las cajas
-  champions.innerHTML = makeChampions(championsData); // "dibuja" cajas con información filtrada
-
-  const imagesButtons = document.querySelectorAll('.imageButton');
-
-  imagesButtons.forEach((elem) => {
-    elem.addEventListener('click', openModal);
-  });
-
-  makeButtons();
-}
-
-function setFilterLine(e) {
-  const filter = e.target.id;
-  lineData = lineChampions(filter);
-  document.getElementById('championsWraper').remove();
-  champions.innerHTML = makeChampions(lineData);
-
-  const imagesButtons = document.querySelectorAll('.imageButton');
-
-  imagesButtons.forEach((elem) => {
-    elem.addEventListener('click', openModal);
-  });
-
-  makeButtons();
-}
-
 function openModal(e) {
   const result = findById(e.target.id); // devuelve solo un campeón
 
@@ -142,6 +70,87 @@ window.onclick = function hide(event) {
     modal.style.display = 'none';
   }
 };
+
+function setFilter(e) { // filtro en select o clases
+  const filter = e.target.value;
+  championsData = showChampion(filter); // filtra la información
+  document.getElementById('championsWraper').remove(); // borra todas las cajas
+  champions.innerHTML = makeChampions(championsData); // "dibuja" cajas con información filtrada
+
+  const allButtons = document.querySelectorAll('.positionButton'); // devuelve el color original a los botones
+  for (let i = 0; i < allButtons.length; i += 1) {
+    allButtons[i].setAttribute('style', 'background: #080808;');
+  }
+
+  const imagesButtons = document.querySelectorAll('.imageButton');
+
+  imagesButtons.forEach((elem) => {
+    elem.addEventListener('click', openModal);
+  });
+}
+
+function setFilterLine(e) {
+  const filter = e.target.id;
+  const allButtons = document.querySelectorAll('.positionButton');
+  for (let i = 0; i < allButtons.length; i += 1) {
+    allButtons[i].setAttribute('style', 'background: #080808;');
+  }
+
+  e.target.style.background = 'rgba(8, 8, 8, 0.5)';
+  lineData = lineChampions(filter);
+  document.getElementById('championsWraper').remove();
+  champions.innerHTML = makeChampions(lineData);
+  const selectClases = document.getElementById('selectClases');
+  selectClases.value = '';
+
+  const imagesButtons = document.querySelectorAll('.imageButton');
+
+  imagesButtons.forEach((elem) => {
+    elem.addEventListener('click', openModal);
+  });
+}
+
+function makeButtons() { // captura los botones y agrega evento
+  const selectClases = document.getElementById('selectClases');
+  const topLine = document.getElementById('Top');
+  const jgLine = document.getElementById('Jungle');
+  const midLine = document.getElementById('Mid');
+  const botLine = document.getElementById('Bot');
+  const supportLine = document.getElementById('Support');
+  selectClases.addEventListener('change', setFilter);
+  topLine.addEventListener('click', setFilterLine);
+  jgLine.addEventListener('click', setFilterLine);
+  midLine.addEventListener('click', setFilterLine);
+  botLine.addEventListener('click', setFilterLine);
+  supportLine.addEventListener('click', setFilterLine);
+}
+
+function setView(e) { // cambia entre inicio y campeones
+  e.preventDefault();
+  if (e.target.id === 'championsButton') {
+    home.style.display = 'none';
+    filters.style.display = 'block';
+    champions.style.display = 'block';
+    championsButton.style.color = 'rgba(55, 225, 227, 0.5)';
+    homeButton.style.color = '';
+
+    champions.innerHTML = makeChampions(championsData); // hace cada caja de campeones
+
+    const imagesButtons = document.querySelectorAll('.imageButton'); // botón de la caja, capturo y agrego evento
+
+    imagesButtons.forEach((elem) => {
+      elem.addEventListener('click', openModal);
+    });
+
+    makeButtons();
+  } else {
+    home.style.display = 'inherit';
+    champions.style.display = 'none';
+    filters.style.display = 'none';
+    homeButton.style.color = 'rgba(55, 225, 227, 0.5)';
+    championsButton.style.color = '';
+  }
+}
 
 homeButton.addEventListener('click', setView);
 championsButton.addEventListener('click', setView);
