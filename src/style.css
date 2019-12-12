@@ -189,6 +189,7 @@ section#champions{
 .imageButton{
     background: transparent;
     border: 0;
+    outline:none;
 }
 .imageButton:hover {
     cursor: pointer;

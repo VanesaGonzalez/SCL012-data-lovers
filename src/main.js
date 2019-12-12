@@ -26,80 +26,6 @@ function makeChampions(data) {
   return innerHTML;
 }
 
-
-
-function setView(e) { // cambia entre inicio y campeones
-  e.preventDefault();
-  if (e.target.id === 'championsButton') {
-    home.style.display = 'none';
-    filters.style.display = 'block';
-    champions.style.display = 'block';
-    championsButton.style.color = 'rgba(55, 225, 227, 0.5)';
-    homeButton.style.color = '';
-
-    champions.innerHTML = makeChampions(championsData); // hace cada caja de campeones
-
-    const imagesButtons = document.querySelectorAll('.imageButton'); // botón de la caja, capturo y agrego evento
-
-    imagesButtons.forEach((elem) => {
-      elem.addEventListener('click', openModal);
-    });
-
-    makeButtons();
-  } else {
-    home.style.display = 'inherit';
-    champions.style.display = 'none';
-    filters.style.display = 'none';
-    homeButton.style.color = 'rgba(55, 225, 227, 0.5)';
-    championsButton.style.color = '';
-  }
-}
-
-function setFilter(e) { // filtro en select o clases
-  const filter = e.target.value;
-  championsData = showChampion(filter); // filtra la información
-  document.getElementById('championsWraper').remove(); // borra todas las cajas
-  champions.innerHTML = makeChampions(championsData); // "dibuja" cajas con información filtrada
-
-  const imagesButtons = document.querySelectorAll('.imageButton');
-
-  imagesButtons.forEach((elem) => {
-    elem.addEventListener('click', openModal);
-  });
-
-  makeButtons();
-}
-
-function setFilterLine(e) {
-  const filter = e.target.id;
-  lineData = lineChampions(filter);
-  document.getElementById('championsWraper').remove();
-  champions.innerHTML = makeChampions(lineData);
-
-  const imagesButtons = document.querySelectorAll('.imageButton');
-
-  imagesButtons.forEach((elem) => {
-    elem.addEventListener('click', openModal);
-  });
-
-  makeButtons();
-}
-
-function makeButtons() { // captura los botones y agrega evento
-  const selectClases = document.getElementById('selectClases');
-  const topLine = document.getElementById('Top');
-  const jgLine = document.getElementById('Jungle');
-  const midLine = document.getElementById('Mid');
-  const botLine = document.getElementById('Bot');
-  const supportLine = document.getElementById('Support');
-  selectClases.addEventListener('change', setFilter);
-  topLine.addEventListener('click', setFilterLine);
-  jgLine.addEventListener('click', setFilterLine);
-  midLine.addEventListener('click', setFilterLine);
-  botLine.addEventListener('click', setFilterLine);
-  supportLine.addEventListener('click', setFilterLine);
-}
-
 function openModal(e) {
   const result = findById(e.target.id); // devuelve solo un campeón
 
@@ -137,6 +63,78 @@ function openModal(e) {
   span.onclick = function hide() {
     modal.style.display = 'none';
   };
+}
+
+function setView(e) { // cambia entre inicio y campeones
+  e.preventDefault();
+  if (e.target.id === 'championsButton') {
+    home.style.display = 'none';
+    filters.style.display = 'block';
+    champions.style.display = 'block';
+    championsButton.style.color = 'rgba(55, 225, 227, 0.5)';
+    homeButton.style.color = '';
+
+    champions.innerHTML = makeChampions(championsData); // hace cada caja de campeones
+
+    const imagesButtons = document.querySelectorAll('.imageButton'); // botón de la caja, capturo y agrego evento
+
+    imagesButtons.forEach((elem) => {
+      elem.addEventListener('click', openModal);
+    });
+
+    makeButtons();// eslint-disable-line no-use-before-define
+  } else {
+    home.style.display = 'inherit';
+    champions.style.display = 'none';
+    filters.style.display = 'none';
+    homeButton.style.color = 'rgba(55, 225, 227, 0.5)';
+    championsButton.style.color = '';
+  }
+}
+
+function setFilter(e) { // filtro en select o clases
+  const filter = e.target.value;
+  championsData = showChampion(filter); // filtra la información
+  document.getElementById('championsWraper').remove(); // borra todas las cajas
+  champions.innerHTML = makeChampions(championsData); // "dibuja" cajas con información filtrada
+
+  const imagesButtons = document.querySelectorAll('.imageButton');
+
+  imagesButtons.forEach((elem) => {
+    elem.addEventListener('click', openModal);
+  });
+
+  makeButtons();// eslint-disable-line no-use-before-define
+}
+
+function setFilterLine(e) {
+  const filter = e.target.id;
+  lineData = lineChampions(filter);
+  document.getElementById('championsWraper').remove();
+  champions.innerHTML = makeChampions(lineData);
+
+  const imagesButtons = document.querySelectorAll('.imageButton');
+
+  imagesButtons.forEach((elem) => {
+    elem.addEventListener('click', openModal);
+  });
+
+  makeButtons();// eslint-disable-line no-use-before-define
+}
+
+function makeButtons() { // captura los botones y agrega evento
+  const selectClases = document.getElementById('selectClases');
+  const topLine = document.getElementById('Top');
+  const jgLine = document.getElementById('Jungle');
+  const midLine = document.getElementById('Mid');
+  const botLine = document.getElementById('Bot');
+  const supportLine = document.getElementById('Support');
+  selectClases.addEventListener('change', setFilter);
+  topLine.addEventListener('click', setFilterLine);
+  jgLine.addEventListener('click', setFilterLine);
+  midLine.addEventListener('click', setFilterLine);
+  botLine.addEventListener('click', setFilterLine);
+  supportLine.addEventListener('click', setFilterLine);
 }
 
 // When the user clicks anywhere outside of the modal, close it
