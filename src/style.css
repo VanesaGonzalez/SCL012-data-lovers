@@ -81,6 +81,8 @@ section#home{
 
 /*--------------------------Nav------------------------*/
 #filters {
+    display:flex;
+    justify-content: center;
     display: none;
 }
 
@@ -94,6 +96,7 @@ section#champions{
 
 .classSelect{
     display: flex;
+    justify-content: center;
     width: 180px;
     height: 47px;
     background: #080808;
@@ -111,6 +114,7 @@ section#champions{
 
 .positionButton{
     display: flex;
+    justify-content: center;
     width: 125px;
     height: 26px;
     background: #080808;
@@ -124,7 +128,6 @@ section#champions{
     color: #AE8537;
     margin: 0.5em;
     outline: none;
-    padding-left: 3%;
 }
 
 /*--------------------------Vista de Campeones-----------------------*/
