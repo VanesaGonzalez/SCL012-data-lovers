@@ -2449,7 +2449,7 @@ export default {
       img:
         'https://www.masterypoints.com/assets/img/lol/champion_icons/Jinx.png',
       splash:
-        'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg',
+        'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg',
       blurb:
         'Jinx lives to wreak havoc without a thought for the consequences, leaving a trail of mayhem and panic in her wake. A manic and impulsive criminal, she despises nothing more than boredom, and gleefully brings her own volatile brand of pandemonium to ...',
       info: {
@@ -3138,7 +3138,7 @@ export default {
       img:
         'https://www.masterypoints.com/assets/img/lol/champion_icons/LeeSin.png',
       splash:
-        'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/LeeSin_0.jpg',
+        'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/LeeSin_0.jpg',
       blurb:
         "As a young teen, Lee Sin was intent on becoming a summoner. His will and dedication were unmatched by any of his peers, and his skill drew the attention of Reginald Ashram, the League's High Councilor at the time. While studying at the Arcanum Majoris,...",
       info: {
@@ -4251,7 +4251,7 @@ export default {
       img:
         'https://www.masterypoints.com/assets/img/lol/champion_icons/Orianna.png',
       splash:
-        'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Orianna_0.jpg',
+        'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Orianna_0.jpg',
       blurb:
         'There once was a Piltovian man named Corin Reveck who had a daughter named Orianna, whom he loved more than anything else in the world. Though Orianna had incredible talent for dancing, she was deeply fascinated by the champions of the League of ...',
       info: {

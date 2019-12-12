@@ -7,7 +7,7 @@
 body{
     display:flex;
     flex-direction: column;
-    background-image: url(./Images/backgroundLoL.png);
+    background-image: url('Images/backgroundLoL.png');
     justify-content: center;
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -53,7 +53,7 @@ section#home{
     flex-direction: column;
 }
 .question{
-    margin: 20px;
+    margin:20px;
     font-size: 30px;
     color: rgba(55, 225, 227, 0.70);
     font-family: 'Abhaya Libre', serif;
@@ -81,6 +81,8 @@ section#home{
 
 /*--------------------------Nav------------------------*/
 #filters {
+    display:flex;
+    justify-content: center;
     display: none;
 }
 
@@ -94,6 +96,7 @@ section#champions{
 
 .classSelect{
     display: flex;
+    justify-content: center;
     width: 180px;
     height: 47px;
     background: #080808;
@@ -111,6 +114,7 @@ section#champions{
 
 .positionButton{
     display: flex;
+    justify-content: center;
     width: 125px;
     height: 26px;
     background: #080808;
@@ -141,7 +145,6 @@ section#champions{
 .row{
     display: flex;
     justify-content: center;
-
 }
 
 #champions .row, #statsDiv .row{
@@ -177,8 +180,9 @@ section#champions{
     background: #080808;
     border: 2px solid #AE8537;
     box-sizing: border-box;
-    /* margin: 0.5em; */
-    /* margin-top: 25px; */
+    margin: 0.2em;
+    margin-top: 25px;
+    outline:none;
 }
 
 .imgRedonda {
@@ -192,13 +196,7 @@ section#champions{
 .imageButton{
     background: transparent;
     border: 0;
-    margin: 0;
-    padding: 0;
-    z-index: 9999;
-}
-
-.margin-box {
-    margin: 0.5em;
+    outline:none;
 }
 
 .imageButton:hover {
