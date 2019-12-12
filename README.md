@@ -59,11 +59,15 @@ fue el juego preferido de los encuestados.
 
 ## 3. Testeo de usabilidad
 
-Realizamos 3 testeo de usabilidad. A continuación los videos:
+Realizamos 4 testeos de usabilidad. A continuación los videos:
 
 https://www.loom.com/share/68f26507f3c146ed848908601bb1a293
 
+https://www.loom.com/share/a1f89e95c62d42718f9834a2cd7df6e8
 
+https://www.loom.com/share/337aa62df06a453eb370c91661eee669
+
+https://www.loom.com/share/6a8c6afd78c14638ae2d9371d2b91eb5
 
 
 ### Apreciaciones e iteración
@@ -87,6 +91,10 @@ El proyecto de creación de la página web, fue en esencia tener una base de dat
 que pudiesen escoger para su equipo a los campeones con mejores habilidades y destrezas.
 
 ### Historias de usuario
+
+Además de las historias de usuario, adjunto link de nuestro Trello con planificación, backlog, criterios de aceptación y más
+https://trello.com/b/nlBaQteb/data-lovers
+
 
 ![alt text](/src/Images/persona1.png)
 ![alt text](/src/Images/persona2.png)
