@@ -64,6 +64,8 @@ Realizamos 3 testeo de usabilidad. A continuación los videos:
 https://www.loom.com/share/68f26507f3c146ed848908601bb1a293
 
 
+
+
 ### Apreciaciones e iteración
 
 Gracias a los testeos de usabilidad pudimos detectar cosas a mejorar en nuestro proyecto e iterar. 
@@ -113,11 +115,13 @@ https://www.figma.com/proto/oneo6NNMoZJ5mAYwJNOapL/Escritorio-Alta-Fidelidad?nod
 #### Prototipo de baja fidelidad móvil
 
 ![alt text](/src/Images/prototipobajamovil.png)
+
 https://www.figma.com/proto/tgOj6wgj8hRAt9bRh0BM0A/BF-M%C3%B3vil?node-id=7%3A2&viewport=400%2C348%2C0.9670165181159973&scaling=scale-down
 
 #### Prototipo de alta fidelidad móvil
 
 ![alt text](/src/Images/prototipoaltamovil.png)
+
 https://www.figma.com/proto/HbdGJwK7q5F9L6uaJ36wgA/AF-M%C3%B3vil?node-id=10%3A2&viewport=197%2C171%2C0.23002852499485016&scaling=scale-down
 
 ### 6. Test unitarios
@@ -129,11 +133,11 @@ https://www.figma.com/proto/HbdGJwK7q5F9L6uaJ36wgA/AF-M%C3%B3vil?node-id=10%3A2&
 
 El propósito del proyecto fue crear una página web que fuese capaz de contener una base de datos, y en base a eso poder filtrar a los campeones según clase y posición de juego. Para esto tuvimos que aprender sobre objetos y arrays, para que realizara la funcionalidad de filtrado, según lo que el usuario quiere o necesita saber.
 
-Nuestra problemática era que los jugadores de nivel principiante y medio de LoL pudiesen escoger a los mejores campeones para conformar su equipo de juego. Para ello, era muy importante que pudiesen filtrar, por cada clase que contiene un campeón y por cada posición de juego; además de saber las mejores habilidades y destrezas de cada campeón. 
+Nuestra problemática era que los jugadores de nivel principiante y medio de LoL pudiesen escoger a los mejores campeones para conformar su equipo de juego. Para ello, era muy importante que pudiesen filtrar por cada clase que contiene un campeón y por cada posición de juego; además de saber las mejores habilidades y destrezas de cada campeón. 
 
 Finalmente, el objetivo se cumple en la página web, ya que los usuarios pueden filtrar los campeones, según las características mencionadas anteriormente. Además, pueden obtener más información sobre los campeones, como por ejemplo, historia, nivel de vida, nivel de poder mágico, entre otros.
 
-Para terminar, creemos 
-creo que pudo ser mucho más explicativa la página, y haberle sacado más provecho al UX Desing.
+Para terminar, creemos que la página de inicio pudo contener información con más dinamismo y no tan estática como quedó finalmente. 
+
 
 
