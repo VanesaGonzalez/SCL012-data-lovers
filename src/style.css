@@ -7,7 +7,7 @@
 body{
     display:flex;
     flex-direction: column;
-    background-image: url('Images/backgroundLoL.png');
+    background-image: url('Images/wallpaper.jpg');
     justify-content: center;
     background-size: 100% 100%;
     background-attachment: fixed;
