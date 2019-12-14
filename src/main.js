@@ -118,7 +118,7 @@ function setFilterLine(e) {
   for (let i = 0; i < allButtons.length; i += 1) {
     allButtons[i].setAttribute('style', 'background: #080808;');
   }
-  e.target.style.background = 'rgba(8, 8, 8, 0.5)';
+  e.target.style.background = 'rgba(8, 8, 8, 0.4)';
   lineData = lineChampions(filter);
   document.getElementById('championsWraper').remove();
   champions.innerHTML = makeChampions(lineData);
